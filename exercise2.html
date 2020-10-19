@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Exercise2</title>
+</head>
+<body>
+    
+   
+     <img id="img"src="" alt="" ></br>
+    <button id="display" style="margin-left:12%;"> display </button>
+    
+    <script>
+        $("#display").click (function(){
+         
+         var imgs = ["img1","img2","img3"];
+         var i =Math.floor(Math.random() * imgs.length); 
+        
+        $("#img").attr("src","./images/"+imgs[i]+".jpeg");
+      
+       });
+
+ 
+    </script>
+    
+</body>
+</html>

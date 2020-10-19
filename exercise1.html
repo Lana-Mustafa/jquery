@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Exercise1</title>
+</head>
+<body>
+    
+   <lable>Your Favorite Color</lable> 
+        <select id="favColor">
+        <option> black </option>
+        <option> green</option>
+        <option> pink </option>
+        <option> yellow </option>
+    </select>
+    <button id="select"> remove </button>
+    
+    <script>
+       $("#select").click (function(){
+
+        $("#favColor option:first").remove();
+       });
+
+
+    </script>
+    
+</body>
+</html>
